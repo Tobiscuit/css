@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .section {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="section-1" class="section">
+      <p contenteditable spellcheck="true">
+        This paragraph demonstrates the use of the contentediable attribute
+        which allows users to edit content
+      </p>
+    </div>
+    <div id="section-2">
+      <h2 title="Section 2 Here">Section 2</h2>
+
+      <!-- href -->
+      <a href="https://www.google.com" target="_blank">Google</a><br /><br />
+
+      <!-- src & alt attributes -->
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Sample Image"
+        width="100"
+      /><br /><br />
+
+      <!--type, value, placeholder for inputs  -->
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        value="DefaultUser"
+        placeholder="Enter Username"
+        readonly="true"
+      /><br /><br />
+
+      <!-- email input, for attribute -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        autocomplete="false"
+      /><br /><br />
+
+      <!-- disabled attribute -->
+       <input type="text" placeholder="Disabled Input" disabled value="Test Value">
+
+       <!-- check attribute -->
+        <input type="checkbox" checked />
+
+        <!-- Selected attribute -->
+         <select name="options" id="optionSelect">
+          <option value="option-1">Option 1</option>
+          <option value="option-2" selected>Option 2</option>
+          
+         </select>
+    </div>
+  </body>
+</html>
