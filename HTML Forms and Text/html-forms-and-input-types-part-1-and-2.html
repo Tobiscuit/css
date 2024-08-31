@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms and Input Types Pt. 1</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      name="username"
+      placeholder="Enter your username"
+    /><br /><br />
+
+    <!-- Text area input -->
+    <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+
+    <!-- Number Input -->
+    <input type="number" name="age" min="10" max="99" /><br /><br />
+
+    <!-- Email, URL, and Telephone inputs -->
+    <input
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+    /><br /><br />
+    <input
+      type="url"
+      name="website"
+      placeholder="https://example.com"
+    /><br /><br />
+    <input type="tel" name="phone" placeholder="555-555-5555" /><br /><br />
+
+    <!-- Date, Time, Range Inputs -->
+    <input type="date" name="dob" />
+    <!-- You can still style it a bit further -->
+    <input type="time" name="appointmentTime" /><br /><br />
+    <input type="range" name="rating" min="0" max="10" value="8" /><br /><br />
+
+    <!-- Search Input -->
+    <input type="search" name="search" placeholder="Search..." />
+
+    <!-- File and Color Inputs -->
+    <input type="file" name="profilePicture" accept="image/* " />
+    <input type="color" name="favoriteColor" /><br /><br />
+
+    <!-- Radio Inputs -->
+    <input type="radio" name="vehicle" value="car" /> Car<br />
+    <input type="radio" name="vehicle" value="truck" /> Truck<br /><br />
+
+    <!-- Checkbox Inputs -->
+     <input type="checkbox" name="vegetables" value="carrot">Carrot<br>
+     <input type="checkbox" name="vegetables" value="potato">Potato<br><br>
+
+     <!-- Password -->
+      <input type="password" name="password" minlength="8"><br><br>
+
+      <!-- Submit & Reset -->
+       <input type="submit" value="Submit Me" onclick="alert('Submitted')"><br><br>
+       <input type="reset" value="Reset Me">
+  </body>
+</html>
